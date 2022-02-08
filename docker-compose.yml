@@ -1,0 +1,31 @@
+# Usage:
+# docker-compose build
+# docker-compose run --rm interview-test
+
+version: '3.4'
+
+services:
+  interview-black-box:
+    image: righteousai/interview-black-box
+    environment:
+      - STOP_ON_REQUEST=1
+    ports:
+      - 5001:5000
+    networks:
+      hostnet: {}
+
+  interview-test:
+    image: interview-test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    depends_on:
+      - interview-black-box
+    networks:
+      hostnet: {}
+
+networks:
+  hostnet:
+    name: interview-test

@@ -43,8 +43,7 @@ To start the interview, follow below instructions:
     - The test program is written in [`Python`](https://www.python.org/) and running inside a [Docker container](https://www.docker.com/resources/what-container)
     - On *Windows / Linux / UNIX / Mac OS* run the command in source code folder
         ```bash
-        docker-compose build
-        docker-compose run --rm interview-test
+        docker-compose run --build --rm interview-test
         ```
 1. 🤔 Make the necessary changes in the Python source code so you get the correct secret value
     - Only the correct secret value will be accepted for the interview
@@ -63,3 +62,15 @@ To start the interview, follow below instructions:
 1. Remember to rebuild the container after making code changes
 
     This test involves Docker containers. This means any code changes made locally don't automatically get pushed inside the container. The container needs to be re-built (or code to be mapped via volumes, but this is advanced for this test)
+
+# 💻 Laptop Challenges
+
+If you do not have access to a laptop, or are facing setup related issues, then you can still complete the test using a cloud-based IDE. The instructions are slightly different.
+
+Follow instructions below to setup GitHub Codespaces and complete the test:
+
+1. [Sign up](https://github.com/signup) for a free GitHub account
+1. [Fork](https://github.com/righteouslabs/interview-test/fork) the interview test repository to your GitHub account
+1. Click `Code` button and select `Create Codespace on main`
+1. Wait for the Codespace to be created
+1. Once the Codespace is ready, continue with the instructions from the `Start` section above

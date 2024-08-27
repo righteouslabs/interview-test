@@ -2,7 +2,7 @@
 # python -m pip install -r requirements.txt
 
 # To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
-flask==2.0.2
+flask==2.2.5
 python-dotenv==0.19.2
 requests==2.27.1
 gunicorn==22.0.0

@@ -4,5 +4,5 @@
 # To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
 flask==2.2.5
 python-dotenv==0.19.2
-requests==2.27.1
+requests==2.32.2
 gunicorn==22.0.0
